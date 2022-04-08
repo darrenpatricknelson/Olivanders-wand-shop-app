@@ -1,38 +1,178 @@
-.App {
+/* This style sheet has really basic styles for the website */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+/* root */
+#root {
+  background-color: black;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  width: 99vw;
+  padding: 20px;
+}
+
+.headerHeading {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+.logOutButton {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  right: 20px;
+}
+
+.logOutButton:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: red;
+}
+
+.headerLogo {
+  /* display: block; */
+}
+
+/* Menu */
+.MenuList {
+  /* border: 1px solid red; */
+}
+
+.MenuList nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navLinks {
+  color: white;
+  font-size: 40px;
+  list-style-type: none;
+  padding: 10px 30px;
+}
+
+.navLinks:hover {
+  transform: scale(1.1);
+  color: white;
+}
+/* Landing page */
+
+.shopDescription {
+  color: white;
+
+  padding: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards {
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* signInPage */
+.LogIn {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.LogInHeading {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.signInPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signInPageLogo {
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.logInButton {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logInButton:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userSignIn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Shopping Page */
+
+.shoppingPage {
+  text-align: center;
+}
+
+.shoppingPage h3 {
+  color: white;
+}
+
+/* Profile */
+.userProfile {
+  width: 400px;
+  margin: 20px auto;
+}
+.userProfileForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userProfileInputs {
+  padding: 10px;
+  border-radius: 2rem;
+}
+
+.userProfileButton {
+  width: 60%;
+  margin: auto;
+}
+
+.displayError {
+  text-align: center;
+  color: red;
+}
+
+.displaySuccess {
+  text-align: center;
+  color: green;
 }
